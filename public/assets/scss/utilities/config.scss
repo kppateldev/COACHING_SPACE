@@ -1,0 +1,31 @@
+$font-primary: 'Montserrat';
+    
+
+$clr-white: #fff;
+$clr-black: #000;
+$clr-l-black: #333;
+$clr-green: #057450;
+$clr-gray: #777777;
+$clr-l-gray: #dbdbdb;
+$clr-lighter-gray: #c3c3c3;
+$clr-yellow: #ffa100;
+$clr-l-yellow: #ffa200;
+
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-reg: 600;
+$font-bold: 700; 
+$font-xbold: 900;
+
+
+%clearfix{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.button-transparent {
+    background-color: transparent;
+    border: none;
+}

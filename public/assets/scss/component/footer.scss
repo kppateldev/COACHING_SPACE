@@ -1,0 +1,195 @@
+footer {
+    z-index: 5;
+    position: relative;
+    
+    .footer-top {
+        background-color: #303f3a;
+        position: relative;
+        overflow: hidden;
+
+        &:before {
+            content: '';
+            width: 226px;
+            height: 238px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-image: url(../images/footer-shape2.png);
+            background-size: cover;
+        }
+
+        .container {
+            position: relative;
+            padding: 45px 15px;
+            
+            &:before {
+                content: '';
+                width: 226px;
+                height: 238px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-image: url(../images/footer-shape1.png);
+                background-size: cover;
+            }
+
+            .col-md-3 {
+                @include breakepoint(sm) {
+                    text-align: center;
+                }
+
+                .logo {
+                    @include breakepoint(sm) {
+                        margin-bottom: 10px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        ul.nav-menu {
+            @include flexbox;
+            @include jutify-end;
+            @include flex-wrap;
+            @include align-item;
+
+            @include breakepoint(sm) {
+                @include jutify-center;
+            }
+
+            li {
+                @include breakepoint(smx) {
+                    width: 100%;
+                    text-align: center;
+                }
+                a {
+                    @include text(16px, 43px, $font-normal, null, $clr-white);
+                    margin-left: 45px;
+
+                    &:hover,&:focus {
+                        color: $clr-l-yellow;
+                    }
+
+                    @include breakepoint(md) {
+                        margin-left: 20px;
+                    }
+
+                    @include breakepoint(sm) {
+                        margin: 10px;
+                    }
+
+                    @include breakepoint(smx) {
+                        line-height: 30px;
+                    }
+                }
+
+                &:first-child {
+                    a {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        background-color: #1e2825;
+        padding: 8px 0;
+        position: relative;
+
+        .container {
+            @include flexbox;
+            @include space-between;
+            position: relative;
+
+            @include breakepoint(smx) {
+                @include flex-wrap;
+                @include jutify-center;
+            }
+        }
+
+        p {
+            @include text(14px, 35px, $font-normal, null, $clr-white);
+
+            @include breakepoint(smx) {
+                width: 100%;
+                text-align: center;
+            }
+
+            @include breakepoint(xs) {
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+ul.social-menu {
+    @include flexbox;
+    @include flex-wrap;
+
+    li {
+        a {
+            @include text(16px, 35px, null, null, $clr-white);
+            margin-left: 40px;
+
+            &:hover {
+                i {
+                    @include transform(rotateY(360deg));
+                    @include transition(all ease 0.5s);
+                    color: $clr-l-yellow;
+                }
+            }
+
+            @include breakepoint(sm) {
+                margin-left: 20px;
+            }
+
+            @include breakepoint(smx) {
+                margin: 0 5px;
+            }
+        }
+    }
+}
+
+.footer-logo {
+    text-align: center;
+
+    .logo {
+        display: inline-block;
+    }
+}
+
+
+.sidebar_overley {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+    visibility: visible;
+    opacity: 1;
+    @include transition(0.3s ease-in-out);
+    animation: fade_in 0.4s linear;
+}
+
+.menu-open {
+    .sidebar_overley {
+        display: block;
+        z-index: 98;
+    }
+
+    header {
+    
+        &:before {
+            background-color: rgb(76 73 67 / 38%);
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

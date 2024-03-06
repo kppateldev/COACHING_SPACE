@@ -1,0 +1,159 @@
+@mixin clearfix{
+    content:'';
+    display:block;
+    clear:both;
+}
+@mixin border-all($width, $style, $color){
+    border-width: $width;
+    border-style: $style;
+    border-color: $color;
+}
+@mixin border-radius($radius){
+	border-radius: $radius;
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+}
+@mixin transition($value){
+	transition: $value;
+	-moz-transition: $value;
+	-webkit-transition: $value;
+	-o-transition: $value;
+}
+@mixin box-shadow($value){
+	box-shadow: $value;
+	-webkit-box-shadow: $value;
+    -moz-box-shadow:$value;
+}
+@mixin box-shadow-none{
+    box-shadow: none;
+	-webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+@mixin transform($value){
+	transform: $value;
+	-moz-transform: $value;
+	-webkit-transform: $value;
+	-ms-transform: $value;
+}
+@mixin flexbox{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+@mixin space-between{
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+@mixin jutify-center{
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+@mixin jutify-end{
+	-webkit-box-pack:end;
+    -ms-flex-pack:end;
+    justify-content: flex-end;
+}
+@mixin jutify-start{
+	-webkit-box-pack:start;
+    -ms-flex-pack: start;
+    justify-content:flex-start;
+}
+@mixin flex-column{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+@mixin align-start{
+	-webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+@mixin align-item{
+	-webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+}
+@mixin align-end{
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+@mixin flex-direction($value){
+    -webkit-box-orient: $value;
+    -webkit-box-direction: $value;
+    -ms-flex-direction: $value;
+    flex-direction: $value;
+}
+@mixin flex-wrap{
+	-ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+}
+
+/*****Font*****/
+@mixin text($size, $line-height, $weight, $family, $color){
+  	font-size: $size;
+    line-height: $line-height;
+    font-weight: $weight;
+    font-family: $family;
+    color: $color;
+}
+
+/****Responsive****/
+@mixin breakepoint($class){ 
+    @if $class == xsmx{
+        @media (max-width: 360px){
+            @content
+        }
+    }
+    @else if $class == xxs{
+        @media (max-width: 479px){
+            @content
+        }
+    }
+    @else if $class == xs{
+        @media (max-width: 480px){
+            @content
+        }
+    }
+    @else if $class == smx{
+        @media (max-width: 575px){
+            @content
+        }
+    }
+    @else if $class == landscap{
+        @media (max-width: 639px){
+            @content
+        }
+    }
+    @else if $class == sm{
+        @media (max-width: 767px){
+            @content
+        }
+    }
+    @else if $class == md{
+        @media (max-width: 991px){
+            @content
+        }
+    }
+    @else if $class == xmd{
+        @media (max-width: 1024px){
+            @content
+        }
+    }
+    @else if $class == lg{
+        @media (max-width: 1199px){
+            @content
+        }
+    }
+    @else if $class == xlg{
+        @media (max-width: 1280px){
+            @content
+        }
+    }
+  
+}

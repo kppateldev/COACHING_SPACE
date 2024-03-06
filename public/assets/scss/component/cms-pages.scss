@@ -1,0 +1,203 @@
+.image-square {
+    height: 50vw;
+    max-height: 640px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    
+    .image {
+        padding: 0;
+    }
+
+    .row {
+        @include align-item;
+        height: 100%;
+            
+        .col-md-6 {
+            height: 100%;
+        }
+    }
+
+    &:nth-child(even) {
+        .row {
+            @include flex-direction(row-reverse);
+        }
+    }
+}
+.background-image-holder {
+    height: 100%;
+    width: 100%;
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.content {
+    @include flexbox;
+    @include align-item;
+}
+
+.content-inner {
+    padding: 0 50px;
+}
+
+
+.tc-content {
+    ul {
+        margin-left: 20px;
+        li {
+            list-style: disc;
+        }
+    }
+    ol {
+        margin-left: 20px;
+        li {
+            list-style-type: decimal;
+        }
+    }
+}
+
+.box-contact-form {
+    .box-header {
+        @include border-radius(10px 10px 0 0);
+        @include box-shadow(0px 7px 20px rgb(114 114 114 / 43%));
+        background-color: $clr-blue;
+        padding: 20px;
+
+        p {
+            color: $clr-white;
+        }
+        h4 {
+            color: $clr-white;
+            margin-bottom: 10px;
+        }
+    }
+    .box-body {
+        padding: 20px;
+        background-color: $clr-white;
+
+        .from-group {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+.contact-destils {
+    padding: 30px;
+    height: 100%;
+    
+    h4 {
+        color: $clr-blue;
+        padding-bottom: 7px;
+        margin-bottom: 15px;
+        font-size: 32px;
+        border-bottom: 1px solid $clr-blue;
+        display: inline-block;
+    }
+
+    ul {
+        margin: 20px 0;
+
+        li {
+            a {
+                @include text(18px, 24px, $font-medium, null, null);
+                margin-bottom: 10px;
+                display: inline-block;
+               
+                i {
+                    width: 30px;
+                    margin-right: 20px;
+                    font-size: 25px;
+                }
+            }
+        }
+
+        &.social-icon {
+            @include flexbox;
+            @include jutify-start;
+            @include align-item;
+
+            li {
+                a{
+                    margin: 0;
+                    font-size: 32px;
+                    padding: 0;
+
+                    i {
+                        font-size:30px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.box.box-contact {background-color: rgb(31 150 146 / 10%);}
+
+.accordion {
+    & > .card {
+        background-color: rgb(232 244 244);
+        @include box-shadow(0 0px 5px rgb(0 0 0 / 11%));
+        border: 1px solid hsl(178deg 66% 35% / 50%);
+
+        & > .card-header {
+            background-color: #e8f4f4;
+
+            a {
+                font-weight: $font-reg;
+                display: block;
+                font-size: 18px;
+                position: relative;
+
+                &.collapsed:before {
+                    position: absolute;
+                    right: 0;
+                    content: "\f067";
+                    font-family: "Font Awesome 5 Pro";
+                    font-weight: 900;
+                    font-size: 18px;
+                }
+
+                &:not(.collapsed):before {
+                    content: "\f068";
+                    right: 0;
+                    font-family: "Font Awesome 5 Pro";
+                    font-weight: 900;
+                    font-size: 18px;
+                    position: absolute;
+                }
+
+                &:hover,&:focus {
+                    color: $clr-black;            
+                }
+            }
+        }
+    }
+}
+
+.box-subject {
+    &.box-shadow {
+        @include box-shadow(0 0 12px rgb(0 0 0 / 20%));
+    }
+    .listing-ul {
+
+        &:last-child {
+            margin: 0;
+        }
+
+        li {
+            width: 100%;
+            padding-left: 20px;
+            @include text(14px, 26px, $font-medium, null, null);
+
+            &:before {
+                font-size: 15px;
+            }
+        }
+    }
+}

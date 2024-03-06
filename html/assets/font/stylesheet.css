@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Optima-LT-Pro';
+    src: url('OptimaLTPro-Black.eot');
+    src: url('OptimaLTPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('OptimaLTPro-Black.woff2') format('woff2'),
+        url('OptimaLTPro-Black.woff') format('woff'),
+        url('OptimaLTPro-Black.ttf') format('truetype'),
+        url('OptimaLTPro-Black.svg#OptimaLTPro-Black') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Optima-LT-Pro';
+    src: url('OptimaLTPro-Bold.eot');
+    src: url('OptimaLTPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('OptimaLTPro-Bold.woff2') format('woff2'),
+        url('OptimaLTPro-Bold.woff') format('woff'),
+        url('OptimaLTPro-Bold.ttf') format('truetype'),
+        url('OptimaLTPro-Bold.svg#OptimaLTPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Optima-LT-Pro';
+    src: url('OptimaLTPro-BlackItalic.eot');
+    src: url('OptimaLTPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('OptimaLTPro-BlackItalic.woff2') format('woff2'),
+        url('OptimaLTPro-BlackItalic.woff') format('woff'),
+        url('OptimaLTPro-BlackItalic.ttf') format('truetype'),
+        url('OptimaLTPro-BlackItalic.svg#OptimaLTPro-BlackItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Optima-LT-Pro';
+    src: url('OptimaLTPro-DemiBold.eot');
+    src: url('OptimaLTPro-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('OptimaLTPro-DemiBold.woff2') format('woff2'),
+        url('OptimaLTPro-DemiBold.woff') format('woff'),
+        url('OptimaLTPro-DemiBold.ttf') format('truetype'),
+        url('OptimaLTPro-DemiBold.svg#OptimaLTPro-DemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Optima-LT-Pro';
+    src: url('OptimaLTPro-BoldItalic.eot');
+    src: url('OptimaLTPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('OptimaLTPro-BoldItalic.woff2') format('woff2'),
+        url('OptimaLTPro-BoldItalic.woff') format('woff'),
+        url('OptimaLTPro-BoldItalic.ttf') format('truetype'),
+        url('OptimaLTPro-BoldItalic.svg#OptimaLTPro-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Optima-LT-Pro';
+    src: url('OptimaLTPro-DemiBoldItalic.eot');
+    src: url('OptimaLTPro-DemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('OptimaLTPro-DemiBoldItalic.woff2') format('woff2'),
+        url('OptimaLTPro-DemiBoldItalic.woff') format('woff'),
+        url('OptimaLTPro-DemiBoldItalic.ttf') format('truetype'),
+        url('OptimaLTPro-DemiBoldItalic.svg#OptimaLTPro-DemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Optima-LT-Pro-XBlack';
+    src: url('OptimaLTPro-ExtraBlack.eot');
+    src: url('OptimaLTPro-ExtraBlack.eot?#iefix') format('embedded-opentype'),
+        url('OptimaLTPro-ExtraBlack.woff2') format('woff2'),
+        url('OptimaLTPro-ExtraBlack.woff') format('woff'),
+        url('OptimaLTPro-ExtraBlack.ttf') format('truetype'),
+        url('OptimaLTPro-ExtraBlack.svg#OptimaLTPro-ExtraBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Optima-LT-Pro-XBlack';
+    src: url('OptimaLTPro-ExtraBlackIta.eot');
+    src: url('OptimaLTPro-ExtraBlackIta.eot?#iefix') format('embedded-opentype'),
+        url('OptimaLTPro-ExtraBlackIta.woff2') format('woff2'),
+        url('OptimaLTPro-ExtraBlackIta.woff') format('woff'),
+        url('OptimaLTPro-ExtraBlackIta.ttf') format('truetype'),
+        url('OptimaLTPro-ExtraBlackIta.svg#OptimaLTPro-ExtraBlackIta') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Optima-LT-Pro';
+    src: url('OptimaLTPro-Medium.eot');
+    src: url('OptimaLTPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('OptimaLTPro-Medium.woff2') format('woff2'),
+        url('OptimaLTPro-Medium.woff') format('woff'),
+        url('OptimaLTPro-Medium.ttf') format('truetype'),
+        url('OptimaLTPro-Medium.svg#OptimaLTPro-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Optima-LT-Pro';
+    src: url('OptimaLTPro-Italic.eot');
+    src: url('OptimaLTPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('OptimaLTPro-Italic.woff2') format('woff2'),
+        url('OptimaLTPro-Italic.woff') format('woff'),
+        url('OptimaLTPro-Italic.ttf') format('truetype'),
+        url('OptimaLTPro-Italic.svg#OptimaLTPro-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Optima-LT-Pro';
+    src: url('OptimaLTPro-Roman.eot');
+    src: url('OptimaLTPro-Roman.eot?#iefix') format('embedded-opentype'),
+        url('OptimaLTPro-Roman.woff2') format('woff2'),
+        url('OptimaLTPro-Roman.woff') format('woff'),
+        url('OptimaLTPro-Roman.ttf') format('truetype'),
+        url('OptimaLTPro-Roman.svg#OptimaLTPro-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Optima-LT-Pro';
+    src: url('OptimaLTPro-MediumItalic.eot');
+    src: url('OptimaLTPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('OptimaLTPro-MediumItalic.woff2') format('woff2'),
+        url('OptimaLTPro-MediumItalic.woff') format('woff'),
+        url('OptimaLTPro-MediumItalic.ttf') format('truetype'),
+        url('OptimaLTPro-MediumItalic.svg#OptimaLTPro-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+

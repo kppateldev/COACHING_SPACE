@@ -1,0 +1,120 @@
+.main-loader{
+    position:fixed;
+    left:0;top:0;right:0;
+    bottom:0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255,.98);
+    z-index:9999;
+}
+.loader-item { width:100px; height: 100px; }
+.loader-item .loader {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    animation-name:loadermove;
+}
+@-webkit-keyframes loadermove {
+    0% {
+        transform: scaleX(1.2) scaleY(1);
+    }
+    25% {
+        transform: scaleX(1) scaleY(1.2) ;
+    }
+    50% {
+        transform: scaleX(1.2) scaleY(1);
+    }
+    75% {
+        transform: scaleX(1) scaleY(1.2);
+    }
+    100% {
+        transform: scaleX(1.2) scaleY(1);
+    }
+}
+.ajax-loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgb(0 0 0 / 40%);
+    z-index: 9999;
+
+    .ajax-loader-item {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.page-spinner {
+    position: fixed;
+    content: "";
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    z-index: 9990;
+    
+    .spinner {
+        position: absolute;
+        content: "";
+        left: 50%;top: 50%;
+        z-index: 20 !important;
+        @include transform(translate(-50% , -50%));
+        animation: loading-spinner 400ms linear infinite;
+
+        .spinner-icon {
+            width: 50px;
+            height: 50px;
+            border: solid 5px transparent;
+            border-top-color: #057450 !important;
+            border-left-color: #057450 !important;
+            border-radius: 50%;
+        }
+    }
+}
+
+@keyframes loading-spinner {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loading-spinner {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,315 @@
+.alert-hide {
+  display: none;
+}
+
+.f-right {
+  float: right;
+}
+
+.mt-10 {
+  margin-top: 10%;
+}
+
+.media-body {
+  position: relative;
+}
+
+.media-body .indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.list-group-item.list-group-item-action {
+  border-bottom: 1px solid #e4eaec !important;
+}
+
+.nav-link {
+  padding: unset;
+}
+
+.red {
+  color: red !important;
+}
+
+.blue {
+  color: blue !important;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+.chart-spline.flot-chart {
+  height: 350px;
+}
+
+.bg-grey {
+  background-color: #ddd !important;
+}
+
+.table>tbody>tr>td .btn {
+  width: 50px;
+  margin: 2px;
+  display: inline-block;
+}
+
+label.error {
+  color: #dc3545;
+  margin-bottom: 0;
+}
+
+.modal .modal-header {
+  background-image: none;
+  box-shadow: none;
+  padding: 14px 16px;
+}
+
+.modal .modal-header .modal-title {
+  text-shadow: none;
+}
+
+.modal .modal-body .table-striped tbody tr:nth-of-type(odd) {
+  background-color: transparent;
+}
+
+.modal .modal-body .table td,
+.modal .modal-body .table th {
+  border: 0;
+  /*word-break: break-word;*/
+}
+
+/* Dashboard responsive css start*/
+.row.success {
+  margin-right: -8px;
+  margin-left: -8px;
+}
+
+.row.success .col-lg-4 {
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 12px;
+}
+
+.row.success .h3 {
+  font-size: 1.25rem;
+}
+
+/* Dashboard responsive css end*/
+#sessionsTbl td,
+#sessionsTbl th {
+  font-size: .875rem;
+}
+
+.fc-bg-event.fc-event-future {
+  /*background-color: #23b7e5 !important;*/
+  opacity: 0.7 !important;
+}
+
+.fc-bg-event.fc-event-past {
+  background-color: #23b7e5 !important;
+}
+
+.card-body .dataTables_wrapper .dataTables_paginate .pagination .paginate_button {
+  padding: 7px 8px;
+}
+
+.card-body .dataTables_wrapper .dataTables_paginate .pagination .paginate_button:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button:active {
+  background-color: transparent !important;
+  background: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.form-group .select2-container--default .select2-selection--multiple {
+  border: 1px solid #d4d4d4;
+  padding: 5px 15px;
+  line-height: 0px;
+  min-height: 20px;
+  border-radius: 3px;
+}
+
+.form-group .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+  padding: 0;
+}
+
+.form-group .select2-container--default .select2-selection--multiple .select2-selection__rendered,
+.form-group .select2-container--default .select2-selection--multiple .select2-selection__rendered li.select2-search.select2-search--inline,
+.form-group .select2-container--default .select2-search--inline .select2-search__field {
+  min-height: 30px !important;
+  margin-top: 0;
+}
+
+.form-group .select2-container--default.select2-container--focus .select2-selection--multiple {
+  border-color: #00aee8;
+}
+
+.form-group .select2-container--default .select2-selection--multiple .select2-selection__rendered li.select2-selection__choice {
+  margin-top: 1px;
+  margin-bottom: 5px;
+  height: 32px;
+  line-height: 32px;
+  color: #000;
+  background-color: #e8f8fc;
+  border: 1px solid #23b7e5;
+  border-radius: 3px;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  color: #ff3333 !important;
+  position: absolute;
+  right: 8px;
+  font-size: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove::before {
+  position: absolute;
+  content: "\f00d";
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #ff3333 !important;
+}
+
+.form-group input.btn.btn-red {
+  height: 40px;
+  border-radius: 4px;
+  background-color: #00aee8;
+  border: 1px solid #00aee8;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  transition: all 0.3s linear;
+}
+
+.form-group input.btn.btn-red:hover {
+  color: #00aee8;
+  background-color: #fff;
+}
+
+label.error {
+  font-size: 14px;
+}
+
+.content-wrapper .card-body table.table tbody tr td:first-child {
+  width: 15%;
+}
+
+.select2-container--open .select2-dropdown {
+  overflow-y: auto;
+}
+
+@media(max-width: 1100px) {
+  .content-wrapper .card-body table.table tbody tr td:first-child {
+    width: 45%;
+  }
+}
+
+
+.custom-picker {
+  background: url(../img/calendar.svg) no-repeat right 15px center / 18px;
+}
+
+.date-listing .selected-date .body {
+  padding: 10px 15px;
+}
+
+.date-listing .selected-date .head {
+  display: block;
+  color: #000;
+  background-color: #e8f8fc;
+  border: 1px solid #23b7e5;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-bottom: 8px;
+}
+
+.date-listing .selected-date .minus_btn {
+  float: right;
+  color: #ff3333 !important;
+}
+
+.date-listing .tags {
+  display: inline-block;
+  color: #000;
+  background-color: #e8f8fc;
+  border: 1px solid #23b7e5;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+.date-listing .tags .slot_remove {
+  color: #ff3333 !important;
+  margin-left: 5px;
+}
+
+.date-listing .tags .slot_remove {
+  font-size: 16px;
+}
+
+.timeslot ul {
+  padding-left: 0;
+  width: 100%;
+  /*max-width: 380px;*/
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.timeslot ul li {
+  list-style: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  border: 1px solid #C2C2C3;
+  background-color: #f9f9f9;
+  margin: 0px 5px;
+  margin-bottom: 10px;
+  flex: calc(20% - 10px);
+  text-align: center;
+}
+
+.timeslot ul li.available {
+  background-color: #ffff007a;
+  color: black;
+}
+
+.timeslot ul li.unavailable {
+  background-color: #ff3333a3;
+  color: black;
+}
+
+.timeslot ul li.booked {
+  background-color: #006600a1;
+  color: black;
+}
+@media screen and (max-width: 1200px) {
+  .timeslot ul li {flex: calc(25% - 10px);}
+}
+@media screen and (max-width: 767px) {
+  .timeslot ul li {flex: calc(50% - 10px);}
+}
+
+.ui-datepicker td.box-available span, 
+.ui-datepicker td.box-available a {
+    border: 1px solid #000;
+    background: #ffff007a;
+    font-weight: normal;
+    color: #000;
+}
+.ui-datepicker td.box-booked span, 
+.ui-datepicker td.box-booked a {
+    border: 1px solid #000;
+    background: #006600a1;
+    font-weight: normal;
+    color: #fff;
+}

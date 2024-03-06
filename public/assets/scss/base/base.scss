@@ -1,0 +1,554 @@
+html, body {
+    scroll-behavior: smooth;
+}
+body {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @include text(16px, 24px, $font-normal, $font-primary, $clr-l-black);
+    background-color: $clr-white;
+    @include transition(ease 0.7s);
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+}
+body .container {
+    width: 100%;
+    max-width: 1200px;
+}
+/****************************** Coman css Start ********************************************************/
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: $font-bold;
+}
+p {
+    margin: 0;
+    padding: 0
+}
+a, a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+input[type="text"], input[type="tel"], input[type="number"], input[type="email"], input[type="password"], input[type="button"], textarea, button, input[type="submit"], select {
+    outline: none;
+}
+label.error {
+    font-size: 13px !important;
+    line-height: 22px !important;
+    color: #ff0000 !important;
+    width: 100% !important;
+}
+input[type=number] {-moz-appearance: textfield;}
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.form-control::placeholder {
+    @include text(16px, 20px, $font-medium, $font-primary, rgb(0 0 0 / 20%));
+}
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+    @include text(16px, 20px, $font-medium, $font-primary, rgb(0 0 0 / 20%));   
+}
+.form-group .form-control::placeholder {
+    font-weight: $font-medium;
+    color: rgb(0 0 0 / 20%);
+}
+.form-control:focus {
+    box-shadow: none;
+    outline: none;
+}
+label {margin: 0px;padding: 0px;}
+input[type=radio], input[type=checkbox] {outline: none;}
+input::-ms-clear, input::-ms-reveal, select::-ms-expand {display: none;}
+img {
+    outline: 0px;
+    border: 0px;
+    max-width: 100%;
+    height: auto;
+}
+ol, ul, .widget_text ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+label {font-weight: normal;}
+.form-control::-webkit-input-placeholder {
+    @include text(16px, 20px, $font-normal, $font-primary, $clr-gray);
+}
+.form-control::-moz-placeholder {
+    @include text(16px, 20px, $font-normal, $font-primary, $clr-gray);
+}
+.form-control:-ms-input-placeholder {
+    @include text(16px, 20px, $font-normal, $font-primary, $clr-gray);
+}
+.form-control:-moz-placeholder {
+    @include text(16px, 20px, $font-normal, $font-primary, $clr-gray);
+}
+.form-control:placeholder{
+    @include text(16px, 20px, $font-normal, $font-primary, $clr-gray);
+}
+button:focus {outline: none;}
+img {max-width: 100%;}
+h2 {font-size: 36px;}
+h3 {font-size: 30px;}
+h4 {font-size: 24px;}
+h5 {font-size: 20px;}
+h6 {font-size: 18px;}
+/****************************** Coman css End **************************************/
+
+p{
+    @include text(16px, 24px, $font-medium, $font-primary, $clr-l-black);
+
+    @include breakepoint(xs) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.color-black {
+    color: $clr-l-black;
+}
+
+.form-lbl {
+    @include text(18px, null, $font-medium, $font-primary, $clr-l-black);
+    padding-bottom: 6px;
+}
+.form-icon {
+    position: relative;
+}
+.form-icon i {
+    position: absolute;
+    line-height: 49px;
+    font-size: 14px;
+    color: #7f7f7f;
+}
+.form-icon-left i {
+    left: 20px;
+    z-index: 5;
+    
+    @include breakepoint(sm) {
+        left: 10px;
+    }
+}
+.form-icon-left .form-control {
+    padding-left: 54px !important;
+
+    @include breakepoint(sm) {
+        padding-left: 30px !important;   
+    }
+}
+.form-icon-right i {
+    right: 20px;
+
+    @include breakepoint(sm) {
+        right: 10px;
+    }
+}
+.form-icon-right .form-control {
+    padding-right: 54px !important;
+
+    @include breakepoint(sm) {
+        padding-left: 30px !important;   
+    }
+}
+.form-control {
+    @include border-radius(10px);
+    background-color: rgba(235,235,235,0);
+    border: 1px solid rgba(22,6,0,0.2);
+    font-size: 16px;
+    color: $clr-gray;
+    font-weight: 400;
+    padding: 12px 20px;
+    height: auto;
+}
+.form-group {
+    margin-bottom: 20px;
+
+    .form-control {
+        @include border-radius(10px);
+        background-color: rgba(235,235,235,0);
+        border: 1px solid rgba(22,6,0,0.2);
+        font-size: 16px;
+        color: $clr-gray;
+        font-weight: $font-normal;
+        padding: 12px 20px;
+        height: auto;
+
+        @include breakepoint(md) {
+            padding: 12px 10px;
+        }
+    }
+
+    textarea.form-control {
+        font-size: 14px;
+        line-height: 24px;
+
+        &::placeholder {
+            font-size: 14px;
+            line-height: 24px;
+            color: rgb(0 0 0 / 20%);
+        }
+    }
+}
+.button-tranparent {
+    @include border-radius(25px);
+    background-color: rgba(28,47,94,0);
+    @include border-all(1px, solid, $clr-green);
+    text-transform: capitalize;
+    @include text(16px, 46px, $font-reg, $font-primary, $clr-l-black);
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    @include transition(0.3s all);
+
+    &:before {
+        content: '';
+        width:100%;
+        height:0%;
+        background-color: $clr-green;
+        position: absolute;
+        top: 0;
+        left:0;
+        z-index: -1;
+        @include transition(0.3s all);
+    }
+    &:hover {
+        color:#fff;
+
+        &::before {
+            height:100%;
+        }
+    }
+}
+.button-green{
+    @include border-radius(10px);
+    background-color: $clr-green;
+    @include box-shadow(0px 12px 16px rgba(0,0,0,0.27));
+    @include text(16px, 47px, $font-reg, $font-primary, $clr-white);
+    padding: 0 24px;
+    position:relative;
+    overflow: hidden;
+    z-index: 2;
+    @include transition(0.3s all);
+
+    &:before {
+        content: '';
+        width:100%;
+        height:100%;
+        background-color: $clr-green;
+        position: absolute;
+        top: 0;
+        left:0;
+        z-index: -1;
+        @include transition(0.3s all);
+    }
+
+    &:hover {
+        color:$clr-green;
+        background-color: #fff;;
+
+        &::before {
+            height:0;
+        }
+
+        i {
+            color: #fff;
+        }
+    }
+
+    @include breakepoint(lg){
+        font-size: 14px;
+        padding: 0 10px;
+    }
+}
+.button-icon-right {
+    padding-right: 54px !important;
+
+    @include breakepoint(lg){
+        padding-right: 45px !important;
+    }
+    &.button-green {
+        i {
+            background-color: #0a8d62;
+        }
+    }
+    &.button-outline-yellow {
+        i {
+            background-color: #fff;
+        }
+    }
+    i {
+        position: absolute;
+        right: -13px;
+        width: 50px;
+        height: 50px;
+        @include border-radius(25px);
+        @include box-shadow(0 0 28.5px rgba(0,0,0,0.5));
+        
+        text-align: center;
+        font-size: 12px;
+        line-height: 47px;
+        text-align: left;
+        padding-left: 15px;
+    }
+}
+.button-white {
+    @include border-radius(25px);
+    @include box-shadow(7.17px 13.117px 19px rgb(119 119 119 / 50%));
+    background-color: $clr-white;
+    display: inline-block;
+    @include text(16px, 46px, $font-reg, $font-primary, $clr-l-black);
+    padding: 0 29px;
+    @include border-all(2px, solid, $clr-white);
+    overflow: hidden;
+    z-index: 2;
+    @include transition(0.3s all);
+    position: relative;
+
+    &:before {
+        content: '';
+        width:100%;
+        height:0%;
+        background-color: $clr-l-black;
+        position: absolute;
+        top: 0;
+        left:0;
+        z-index: -1;
+        @include transition(0.3s all);
+    }
+
+    &:hover {
+        color:#fff;
+
+        &::before {
+            height:100%;
+        }
+    }
+}
+button {
+    background-color: transparent;
+    border: none;
+    @include text(16px, 20px, $font-reg, $font-primary, $clr-l-black);
+}
+.button-outline-yellow{
+    @include border-radius(10px);
+    background-color: #ffffec;
+    @include box-shadow(0px 12px 16px rgba(0,0,0,0.27));
+    border: 1px solid $clr-yellow;
+    @include text(16px, 47px, $font-reg, $font-primary, $clr-l-black);
+    padding: 0 24px;
+    position:relative;
+    overflow: hidden;
+    z-index: 2;
+    @include transition(0.3s all);
+
+    &:before {
+        content: '';
+        width:100%;
+        height:100%;
+        background-color: #ffffec;
+        position: absolute;
+        top: 0;
+        left:0;
+        z-index: -1;
+        @include transition(0.3s all);
+    }
+
+    &:hover {
+        color:#fff;
+        background-color: $clr-yellow;
+
+        &::before {
+            height:0;
+        }
+
+        i {
+            color: $clr-white;
+        }
+    }
+
+    @include breakepoint(lg){
+        font-size: 14px;
+        padding: 0 10px;
+    }
+}
+.button-outline-yellow.button-icon-right{
+    &:hover {
+        i {
+            color: $clr-yellow;
+        }
+    }
+}
+.button-border-black {
+    border-color: #959794;
+}
+.button-text {
+    @include text(16px, 24px, $font-bold, $font-primary, $clr-green);
+
+    &:hover,&:focus {
+        color: $clr-l-black;
+    }
+}
+.button-outline-green {
+    @include border-radius(10px);
+    background-color: $clr-white;
+    display: inline-block;
+    @include text(16px, 46px, $font-reg, $font-primary, $clr-green);
+    padding: 0 29px;
+    @include border-all(2px, solid, $clr-green);
+    overflow: hidden;
+    z-index: 2;
+    @include transition(0.3s all);
+    position: relative;
+
+    &:before {
+        content: '';
+        width:100%;
+        height:0%;
+        background-color: $clr-green;
+        position: absolute;
+        top: 0;
+        left:0;
+        z-index: -1;
+        @include transition(0.3s all);
+    }
+
+    &:hover {
+        color:#fff;
+
+        &::before {
+            height:100%;
+        }
+    }
+}
+.button-border-green {
+    border: 2px solid $clr-green;
+    color: $clr-green;
+
+    &:before {
+        background-color: $clr-green;
+    }
+}
+
+.button-shadow {
+     @include box-shadow (0px 11px 10px rgba(0,0,0,0.3) !important);
+}
+.button-shadow-none {
+    box-shadow: none !important;
+}
+.clr-gray {
+    color: #777 !important;
+}
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.mt-10 {
+    margin-top: 10px !important;   
+}
+.mt-5 {
+    margin-top: 5px !important;   
+}
+.mt-0 {
+    margin-top:0 !important;
+}
+.mt-30 {
+    margin-top: 30px !important;
+}
+.mt-40 {
+    margin-top: 40px !important;
+}
+.mb-25 {
+    margin-bottom: 25px !Important;
+}
+.m-tlr-20 {
+    margin: 20px 20px 0 20px !important;
+}
+.m-lr-20{
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
+.p-0{
+    padding:0 !important;
+}
+.p-lr-0{
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+.p-tlr-20 {
+    padding: 20px 20px 0 20px !important;
+}
+.p-20 {
+    padding: 20px !important;
+}
+.p-30 {
+    padding: 30px !important;
+}
+.fs-18 {
+    font-size: 18px !important;
+    line-height: 24px !important;
+}
+.button-border-gray {
+    border: 1px solid rgba(0,0,0,0.32);
+}
+.box-shadow-none {
+    box-shadow: none;
+}
+
+.box {
+    .remove_field_button {
+        margin: 0;
+        min-width: 50px;
+        font-size: 28px;
+        padding: 0;
+        line-height: 16px;
+    }
+}
+
+.dynamic_exp_row {
+    margin-bottom: 20px;
+}
+a.button-green {
+    color: $clr-white;
+    display: inline-block;
+    margin: 10px 0;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(../images/arrow-btm.png);
+    background-repeat: no-repeat;
+    background-position: 90% center;
+
+    @include breakepoint(md) {
+        background-position: 99% center;        
+    }
+}
+
+
+.border-none {
+    border: none !important;
+}
+
+.button-big {
+    line-height: 70px;
+    
+    &.button-icon-right {
+        i {
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            border-radius: 50%;
+            right: -25px;
+            padding-left: 18px;
+        }
+    }
+}
+a {
+    color: #0d9bff;
+}

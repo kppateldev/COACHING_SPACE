@@ -1,0 +1,206 @@
+.box.box-table {
+    padding: 20px 30px 40px;
+
+    @include breakepoint(xxs) {
+    	padding: 15px;
+    }
+}
+.box.box-p-30 {
+	padding: 30px;
+
+    @include breakepoint(sm) {
+    	padding: 20px;
+    }
+}
+.dataTables_filter {
+	label {
+	    @incude flexbox;
+	    @incude align-item;
+	    @incude jutify-end
+	    margin-bottom: 20px;
+	    @include text(16px, 24px, $font-normal, null, $clr-l-black);
+
+	    .form-control {
+		    max-width: 225px;
+		    margin-left: 10px;
+
+		    &::placeholder {
+	    		@include text(14px, 48px, $font-normal, null, $clr-gray);
+			}
+		}
+	}
+}
+.button-table-action {
+    width: 30px;
+    height: 30px;
+    @include border-radius(50%);
+    background-color: #ffa100;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: $clr-white !important;
+    margin: 2px 4px;
+
+    &:hover {
+	    color: #fff;
+	    opacity: 0.7;
+	}
+}
+.button-table-edit {
+    background-color: #0c7855;
+    font-size: 12px;
+}
+.button-table-delete {
+    background-color: #ff5959;
+    font-size: 12px;
+}
+.button-table-user {
+    background-color: #858585;
+    font-size: 12px;
+}
+.button-table-application {
+    width: 150px;
+    height: auto;
+    @include border-radius(10px);
+    @include text(16px, 20px, $font-normal, null, $clr-white);
+    padding: 5px 13px;
+}
+.dataTables_paginate {
+	.pagination {
+	    @include jutify-end;
+	}
+}
+
+.table,table {
+	border-collapse:collapse;
+    border-spacing:0;
+    border: none;
+    margin-bottom: 40px;
+	
+	tbody {
+		td {
+		    border: 1px solid #dddddd;
+		    overflow: hidden;
+		    @include text(16px, 20px, $font-medium, null, $clr-l-black);
+		    padding: 10px 20px 10px 20px;
+		    vertical-align: middle;
+
+		    @include breakepoint(lg) {
+		    	padding: 10px;
+		    }
+		    @include breakepoint(sm) {
+		    	font-size: 14px;
+		    	padding: 10px;
+		    }
+		    @include breakepoint(smx) {
+		    	font-size: 12px;
+		    	line-height: 18px;
+		    }
+		    & > a:not(.button-table-action) {
+		    	color: #333;
+		    	font-weight: 600;
+		    }
+
+		    span, p {
+		    	@include text(16px, 20px, $font-medium, null, $clr-l-black);
+
+		    	@include breakepoint(sm) {
+		    		font-size: 14px;
+				}
+
+			    @include breakepoint(smx) {
+			    	font-size: 12px;
+			    	line-height: 18px;
+			    }
+			    
+				&.clr-green {
+				    color: #0c7855;
+				}
+
+				&.clr-blue {
+				    color: #008aff;
+				}
+		    }	
+		}
+	}
+	thead {
+		th {
+		    border: 1px solid #dddddd;
+			overflow: hidden;
+			background-color: #fbebcf;
+		    @include text(16px, 20px, $font-reg, null, $clr-l-black);
+		    padding: 15px 20px 15px 20px;
+
+		    @include breakepoint(sm) {
+		    	font-size: 14px;
+		    	padding: 15px 10px;
+			}
+		}
+	}
+}
+
+.table-custom-filter {
+    @include flexbox;
+    @include flex-wrap;
+    @include jutify-end;
+    @include align-item;
+}
+
+.cutom-filter-box {
+
+	&.type-filter {
+		margin-left: 35px;
+
+		@include breakepoint(xxs) { 
+			margin-left: 5px;
+		}
+		
+		.form-control {
+		    width: 225px;
+		}
+	}
+	&.type-status {
+		margin-left: 35px;
+
+		@include breakepoint(xxs) { 
+			margin-left: 5px;
+		}
+		.form-control {
+		    width: 225px;
+		}
+	}
+
+	label {
+	    @include text(16px, 28px, $font-reg, null, $clr-l-black);
+	    display: inline-block;
+	}
+
+	.form-control {
+	    display: inline-block;
+	}
+}
+
+/*.table-wrap {
+	@include border-radius(7px);
+	border: 1px solid #dddddd;
+	margin: 0px;
+	overflow: hidden;
+
+	table.dataTable {
+	    margin: -1px !important;
+	}
+}*/
+
+.table.dataTable tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+.table.dataTable tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+.table.dataTable tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+.table.dataTable tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}

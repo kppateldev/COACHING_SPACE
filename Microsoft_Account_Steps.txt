@@ -1,0 +1,75 @@
+Microsoft Account Link
+hello@coachingspace.co.uk
+dxz3xwt@YQB1ncw@wdb
+
+bookings@coachingspace.co.uk
+h6MKvfKnzKXHGCKFEmdX
+
+Reference site: https://vikrantsdynamicsblogs.wordpress.com/2020/03/28/programmatically-create-the-teams-meeting/
+
+
+1) first login with email and password
+url : https://developer.microsoft.com/en-us/graph/graph-explorer
+
+2) create app using portal azure
+url : https://portal.azure.com/#view/Microsoft_Azure_Billing/FreeServicesBlade
+app services->Manage Azure Active Directory->create new app
+https://prnt.sc/BiNpriYLLBRV
+api permissions
+add a permisssion
+Select an API ->microsoft graph
+https://prnt.sc/rVp8kETxHNHy
+https://prnt.sc/dfJisoq9kaY9
+https://prnt.sc/N3ScKyBN99h7
+
+need
+https://prnt.sc/T4JqAYZR9zb5
+
+3) app permission
+https://admin.teams.microsoft.com/
+
+https://admin.teams.microsoft.com/policies/meetings/edit/Z3Vlc3RBY2NvdW50
+
+https://prnt.sc/nr104_SYjKNe
+https://prnt.sc/mBXITx71eeug
+https://prnt.sc/feb9VxxjvROu
+create 1 custom policy
+https://prnt.sc/ESG0Xtkea7G1
+https://prnt.sc/PiUteX5HmmJP
+https://prnt.sc/PXBfy9_assfK
+https://prnt.sc/VlpE3UpBemG0
+
+
+https://prnt.sc/BCST2t1aVXX7
+tentent id : 90587058-d91d-4e6e-94da-1a244a189c26
+client id : 76af2bb4-93b5-4966-adf2-4df564fd878e
+-----------------------------------------------------
+client secret
+https://prnt.sc/C1_yTWHU1W8z
+
+Id : 4cef8e29-c98b-449f-993c-9cd2245ef1b0
+value / client_secret : E3u8Q~KuKMqHoDDiig46P8unQXD0QXz5XxpZDbBj
+
+----------------------------------------------------
+UserID: d0313d94-9436-4f5d-8a85-b383020501ff
+URL : https://developer.microsoft.com/en-us/graph/graph-explorer
+https://prnt.sc/QWyt0fpLPQ5G
+CURLOPT_URL => 'https://graph.microsoft.com/v1.0/users/d0313d94-9436-4f5d-8a85-b383020501ff/onlineMeetings',
+----------------------------------------------------------
+
+Configure application access to online meetings
+https://learn.microsoft.com/en-us/graph/cloud-communication-online-meeting-application-access-policy
+https://www.c-sharpcorner.com/article/getting-started-with-microsoft-graph-api/
+
+---- Error: Microsoft Meeting: When the meeting starts, we'll let people know ----
+
+URL: https://learn.microsoft.com/en-us/graph/cloud-communication-online-meeting-application-access-policy
+
+Steps:
+
+New-CsApplicationAccessPolicy -Identity Test-policy2 -AppIds "76af2bb4-93b5-4966-adf2-4df564fd878e" -Description "Booking account policy"
+
+Grant-CsApplicationAccessPolicy -PolicyName Test-policy2 -Identity "d0313d94-9436-4f5d-8a85-b383020501ff"
+
+Grant-CsApplicationAccessPolicy -PolicyName Test-policy2 -Global
+

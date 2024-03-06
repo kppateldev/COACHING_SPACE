@@ -1,0 +1,17 @@
+/*--------- Utilities ---------*/
+@import "utilities/config";
+@import "utilities/mixin";
+
+/*--------- Base ---------*/
+@import "base/base";
+
+
+/*--------- components ---------*/
+@import "component/account";
+@import "component/design-pages";
+@import "component/table";
+@import "component/post";
+@import "component/home";
+@import "component/footer";
+@import "component/header";
+@import "component/loader";
